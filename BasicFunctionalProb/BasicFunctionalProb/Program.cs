@@ -14,6 +14,7 @@ namespace BasicFunctionalProb
             Console.WriteLine("3 for Power of two");
             Console.WriteLine("4 for Harmonic Number");
             Console.WriteLine("5 for Factors");
+            Console.WriteLine("6 for Quotient and remainder");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -37,6 +38,10 @@ namespace BasicFunctionalProb
                 case 5:
                     FactorsProb factors = new FactorsProb();
                     factors.Factors();
+                    break;
+                case 6:
+                    QuotientRemainder quotientRemainder = new QuotientRemainder();
+                    quotientRemainder.QuotientAndRemainder();
                     break;
             }
         }
