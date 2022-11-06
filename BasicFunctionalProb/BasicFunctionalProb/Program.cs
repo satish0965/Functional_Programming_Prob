@@ -12,6 +12,8 @@ namespace BasicFunctionalProb
             Console.WriteLine("1 for Flip coin and print percentage of Heads and tails");
             Console.WriteLine("2 for Leap Year");
             Console.WriteLine("3 for Power of two");
+            Console.WriteLine("4 for Harmonic Number");
+
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -28,9 +30,10 @@ namespace BasicFunctionalProb
                     PowerOfTwo poweroftwo = new PowerOfTwo();
                     poweroftwo.Power2();
                     break;
-
-
-
+                case 4:
+                    Harmonic harmonic = new Harmonic();
+                    harmonic.HarmonicNum();
+                    break;
             }
         }
     }
