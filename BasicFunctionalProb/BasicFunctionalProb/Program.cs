@@ -15,6 +15,7 @@ namespace BasicFunctionalProb
             Console.WriteLine("4 for Harmonic Number");
             Console.WriteLine("5 for Factors");
             Console.WriteLine("6 for Quotient and remainder");
+            Console.WriteLine("7 for Swap two Number");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -42,6 +43,10 @@ namespace BasicFunctionalProb
                 case 6:
                     QuotientRemainder quotientRemainder = new QuotientRemainder();
                     quotientRemainder.QuotientAndRemainder();
+                    break;
+                case 7:
+                    SwappingNumber swapnumber = new SwappingNumber();
+                    swapnumber.SwapTwoNumber();
                     break;
             }
         }
