@@ -1,4 +1,4 @@
-﻿/// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 using System;
 
 namespace BasicFunctionalProb
@@ -18,6 +18,7 @@ namespace BasicFunctionalProb
             Console.WriteLine("7 for Swap two Number");
             Console.WriteLine("8 for Check even or odd");
             Console.WriteLine("9 for Check Vowels");
+            Console.WriteLine("10 for Check Largest of Three Numbers");
 
 
             int Problem = Convert.ToInt32(Console.ReadLine());
@@ -58,6 +59,10 @@ namespace BasicFunctionalProb
                 case 9:
                     CheckOvels ovels = new CheckOvels();
                     ovels.CheckVowelOrConsonant();
+                    break;
+                case 10:
+                    LargestNumber largestnumber = new LargestNumber();
+                    largestnumber.LargestThreeNumbers();
                     break;
             }
         }
